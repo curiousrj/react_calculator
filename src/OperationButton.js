@@ -4,7 +4,10 @@ function OperationButton(props) {
   return (
     <button
       onClick={() =>
-        props.dispatch({ type: actions.choose_operation, payload: { operation } })
+        props.dispatch({
+          type: actions.choose_operation,
+          payload: { operation },
+        })
       }
     >
       {operation}
