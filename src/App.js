@@ -108,7 +108,7 @@ function evaluate(previousOperand, currentOperand, operation) {
 
 function formatOperand(operand) {
   const numberFormat = new Intl.NumberFormat("en-IN", {
-    maximumSignificantDigits: 3,
+    maximumFractionDigits: 0,
   });
   if (operand === "") {
     return "";
